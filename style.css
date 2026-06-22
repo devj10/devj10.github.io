@@ -11,6 +11,16 @@
   --radius: 12px;
 }
 
+[data-theme="light"] {
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --border: #dde3ed;
+  --accent: #4a72ff;
+  --accent2: #7c3aed;
+  --text: #1a1d27;
+  --muted: #60718a;
+}
+
 html { scroll-behavior: smooth; }
 
 body {
@@ -18,6 +28,7 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
+  transition: background 0.25s, color 0.25s;
 }
 
 /* NAV */
@@ -57,6 +68,20 @@ nav ul a {
 
 nav ul a:hover { color: var(--text); }
 
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 0.4rem 0.5rem;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.theme-toggle:hover { color: var(--text); border-color: var(--accent); }
+
 /* TYPEWRITER CURSOR */
 @keyframes blink {
   0%, 100% { border-color: var(--accent); }
@@ -83,9 +108,7 @@ nav ul a:hover { color: var(--text); }
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 1.25rem;
-  background: linear-gradient(135deg, var(--text) 60%, var(--accent));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ff6b6b;
 }
 
 .hero-content p {
@@ -99,6 +122,7 @@ nav ul a:hover { color: var(--text); }
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .hero-links a {
@@ -110,19 +134,22 @@ nav ul a:hover { color: var(--text); }
   transition: all 0.2s;
 }
 
-.hero-links a:first-child {
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
   background: var(--accent);
   color: #fff;
 }
 
-.hero-links a:first-child:hover { opacity: 0.85; }
+.btn-icon:hover { opacity: 0.85; }
 
-.hero-links a:last-child {
+.btn-outline {
   border: 1px solid var(--border);
   color: var(--text);
 }
 
-.hero-links a:last-child:hover { border-color: var(--accent); color: var(--accent); }
+.btn-outline:hover { border-color: var(--accent); color: var(--accent); }
 
 /* SECTIONS */
 section:not(#hero) {
@@ -332,6 +359,69 @@ section p { color: var(--muted); max-width: 620px; }
 
 @media (max-width: 640px) {
   .courses-grid { grid-template-columns: 1fr; }
+}
+
+/* PASSIONS */
+.passions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+@media (max-width: 640px) {
+  .passions-grid { grid-template-columns: 1fr; }
+}
+
+
+.passion-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.passion-block p {
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.passion-note {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+.passion-awards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.award {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  gap: 1rem;
+  transition: border-color 0.2s;
+}
+
+.award:hover { border-color: var(--accent); }
+
+.award-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.award-detail {
+  font-size: 0.8rem;
+  color: var(--muted);
+  white-space: nowrap;
 }
 
 /* CONTACT */
