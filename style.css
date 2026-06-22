@@ -396,6 +396,9 @@ section p { color: var(--muted); max-width: 620px; }
   font-weight: 700;
   color: var(--accent);
   margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
 }
 
 .passion-block p {
