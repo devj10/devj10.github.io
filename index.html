@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev Jayram</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-name">Dev Jayram</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Research & Work Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero" style="--anchor: about;">
+    <div class="hero-content">
+      <h1>Hi, I'm Dev Jayram</h1>
+      <div class="about-content">
+        <img src="IMG_0802.jpg" alt="Dev Jayram" class="about-photo" />
+        <p>
+          I'm a junior at Stanford University studying Mathematics and Computer Science (AI), with interests in statistics, deep learning, computer vision, and autonomous systems.
+          My recent work spans uncertainty quantification for 3D object detection, reinforcement learning, and computer vision.
+        </p>
+      </div>
+      <div class="hero-links">
+        <a href="https://github.com/devj10" target="_blank">GitHub</a>
+        <a href="#projects">View Projects</a>
+      </div>
+    </div>
+  </section>
+  <span id="about"></span>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="exp-list">
+
+      <div class="exp-item">
+        <button class="exp-header" aria-expanded="false">
+          <div class="exp-meta">
+            <span class="exp-company">Uber</span>
+            <span class="exp-role">Software Engineering Intern</span>
+          </div>
+          <span class="exp-date">Sep 2026 – Dec 2026</span>
+          <svg class="exp-chevron" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"/></svg>
+        </button>
+        <div class="exp-body">
+          <ul>
+            <li>Incoming position.</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="exp-item">
+        <button class="exp-header" aria-expanded="false">
+          <div class="exp-meta">
+            <span class="exp-company">Navigation & Autonomous Vehicles (NAV) Lab, Stanford</span>
+            <span class="exp-role">Undergraduate Researcher</span>
+          </div>
+          <span class="exp-date">Jan 2026 – Present</span>
+          <svg class="exp-chevron" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"/></svg>
+        </button>
+        <div class="exp-body">
+          <ul>
+            <li>Built a BEV mapping pipeline using the BEVFormer transformer model to generate lane-level autonomous driving maps from 10k+ nuScenes frames.</li>
+            <li>Benchmarked vision foundation models (VGGT and MapAnything) on trajectories up to 50 frames, reducing pose alignment error by 20% through confidence-based trajectory alignment.</li>
+            <li>Built confidence-filtered BEV RGB and geometry visualization tools in Python using PyTorch, OpenCV, and Open3D across 100+ trajectory reconstructions.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <button class="exp-header" aria-expanded="false">
+          <div class="exp-meta">
+            <span class="exp-company">Amazon</span>
+            <span class="exp-role">Software Development Engineer Intern – ADV Team</span>
+          </div>
+          <span class="exp-date">Jun – Sep 2025</span>
+          <svg class="exp-chevron" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"/></svg>
+        </button>
+        <div class="exp-body">
+          <ul>
+            <li>Built a CV pipeline in Python/OpenCV to automate trajectory labeling across 1700+ hours of autonomous-driving footage, reducing manual annotation effort by 80%.</li>
+            <li>Applied SLAM and structure-from-motion pipelines (COLMAP, VGGT) to reconstruct 150 large-scale 3D driving scenes for autonomous vehicle perception and mapping.</li>
+            <li>Built video data pipelines using AWS S3, Docker, and Parquet, accelerating dataset processing runtime by 60% for motion-planning model training.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <button class="exp-header" aria-expanded="false">
+          <div class="exp-meta">
+            <span class="exp-company">DDM Systems</span>
+            <span class="exp-role">Software Engineer Intern</span>
+          </div>
+          <span class="exp-date">Jun – Sep 2024</span>
+          <svg class="exp-chevron" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"/></svg>
+        </button>
+        <div class="exp-body">
+          <ul>
+            <li>Built an error detection system for ceramic-shell 3D printing in C++ and OpenCV.</li>
+            <li>Optimized and debugged slicing/tiling multi-threaded software, achieving a 6× improvement in layer processing speed.</li>
+            <li>Developed thermal imaging and machine vision algorithms for real-time adaptive feedback control of melt-pool temperatures.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card-grid">
+
+      <div class="card">
+        <h3>BEV Uncertainty Detection</h3>
+        <p>Monte Carlo dropout-based uncertainty estimation for Bird's Eye View 3D object detection on nuScenes. Built for CS231n.</p>
+        <div class="tags"><span>PyTorch</span><span>Computer Vision</span><span>nuScenes</span></div>
+        <a href="https://github.com/devj10/cs231n" target="_blank">GitHub →</a>
+      </div>
+
+      <div class="card">
+        <h3>SceneSculpt</h3>
+        <p>3D scene generation and manipulation tool.</p>
+        <div class="tags"><span>3D</span><span>Python</span></div>
+        <a href="https://github.com/devj10" target="_blank">GitHub →</a>
+      </div>
+
+      <div class="card">
+        <h3>CS224R Final Project</h3>
+        <p>Deep reinforcement learning research project.</p>
+        <div class="tags"><span>RL</span><span>PyTorch</span></div>
+        <a href="https://github.com/devj10" target="_blank">GitHub →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="courses">
+    <h2>Courses</h2>
+    <div class="courses-grid">
+      <div>
+        <h3 class="courses-subheading">Computer Science</h3>
+        <div class="course-list">
+          <div class="course"><span class="course-code">CS 103</span><span class="course-name">Mathematical Foundations of Computing</span></div>
+          <div class="course"><span class="course-code">CS 106B</span><span class="course-name">Programming Abstractions</span></div>
+          <div class="course"><span class="course-code">CS 109</span><span class="course-name">Introduction to Probability for Computer Scientists</span></div>
+          <div class="course"><span class="course-code">CS 161</span><span class="course-name">Design and Analysis of Algorithms</span></div>
+          <div class="course"><span class="course-code">CS 107</span><span class="course-name">Computer Organization and Systems</span></div>
+          <div class="course"><span class="course-code">CS 111</span><span class="course-name">Operating Systems Principles</span></div>
+          <div class="course"><span class="course-code">CS 148</span><span class="course-name">Introduction to Computer Graphics and Imaging</span></div>
+          <div class="course"><span class="course-code">CS 229</span><span class="course-name">Machine Learning</span></div>
+          <div class="course"><span class="course-code">CS 231N</span><span class="course-name">Deep Learning for Computer Vision</span></div>
+          <div class="course"><span class="course-code">CS 224R</span><span class="course-name">Deep Reinforcement Learning</span></div>
+          <div class="course"><span class="course-code">CS 237A</span><span class="course-name">Principles of Robot Autonomy I</span></div>
+        </div>
+      </div>
+      <div>
+        <h3 class="courses-subheading">Mathematics</h3>
+        <div class="course-list">
+          <div class="course"><span class="course-code">MATH 62DM</span><span class="course-name">Finite Fields & Applications to Combinatorics</span></div>
+          <div class="course"><span class="course-code">MATH 63DM</span><span class="course-name">Probability Theory</span></div>
+          <div class="course"><span class="course-code">MATH 77Q</span><span class="course-name">Probability and Gambling</span></div>
+          <div class="course"><span class="course-code">MATH 104</span><span class="course-name">Applied Matrix Theory</span></div>
+          <div class="course"><span class="course-code">MATH 107</span><span class="course-name">Graph Theory</span></div>
+          <div class="course"><span class="course-code">MATH 110</span><span class="course-name">Number Theory for Cryptography</span></div>
+          <div class="course"><span class="course-code">MATH 158</span><span class="course-name">Probability and Stochastic Differential Equations for Applications</span></div>
+          <div class="course"><span class="course-code">MATH 159</span><span class="course-name">Discrete Probabilistic Methods</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Reach me at <a href="mailto:devj10@stanford.edu">devj10@stanford.edu</a> or find me on <a href="https://github.com/devj10" target="_blank">GitHub</a>.</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Dev Jayram</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
