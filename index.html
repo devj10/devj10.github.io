@@ -82,7 +82,12 @@
       <div class="exp-item">
         <button class="exp-header" aria-expanded="false">
           <div class="exp-meta">
-            <span class="exp-company">Navigation & Autonomous Vehicles (NAV) Lab, Stanford</span>
+            <span class="exp-company">
+              Navigation & Autonomous Vehicles (NAV) Lab, Stanford
+              <a href="papers/IONGNSS_2026_Abstract_Partha_BEVFormer_Camera_Ablation.pdf" target="_blank" class="paper-link" onclick="event.stopPropagation()" title="BEV Mapping from Vehicle Cameras via 3D Foundation Models">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              </a>
+            </span>
             <span class="exp-role">Undergraduate Researcher</span>
           </div>
           <span class="exp-date">Jan 2026 – Present</span>
@@ -90,7 +95,7 @@
         </button>
         <div class="exp-body">
           <ul>
-            <li>Collaborative research project with HERE Technologies.
+            <li>Collaborative research project with HERE Technologies. Abstract submitted to ION (Institute of Navigation) GNSS+ 2026 Conference.
             <li>Built a BEV mapping pipeline using the BEVFormer transformer model to generate lane-level autonomous driving maps from 10k+ nuScenes frames.</li>
             <li>Benchmarked vision foundation models (VGGT and MapAnything) on trajectories up to 50 frames, reducing pose alignment error by 20% through confidence-based trajectory alignment.</li>
             <li>Built confidence-filtered BEV RGB and geometry visualization tools in Python using PyTorch, OpenCV, and Open3D across 100+ trajectory reconstructions.</li>
@@ -145,42 +150,57 @@
         <h3>(Bird's Eye View) BEV Confidence Mapping for Autonomous Driving</h3>
         <p>Uncertainty-aware BEV perception pipeline using YOLOv8n with MC-DropBlock inference to estimate per-detection confidence and project spatial uncertainty maps for risk-aware autonomous driving planning.</p>
         <div class="tags"><span>PyTorch</span><span>YOLOv8</span><span>nuScenes</span><span>OpenCV</span></div>
-        <a href="https://github.com/devj10/BEV-Confidence-Mapping-for-Autonomous-Driving" target="_blank">GitHub →</a>
+        <div class="card-links">
+          <a href="https://github.com/devj10/BEV-Confidence-Mapping-for-Autonomous-Driving" target="_blank" class="card-icon-link" title="GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+          <a href="papers/CS231n_BEV_Confidence_Mapping.pdf" target="_blank" class="card-icon-link" title="Paper"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></a>
+        </div>
       </div>
 
       <div class="card">
         <h3>SceneSculpt</h3>
         <p>Turns phone videos into editable 3D scenes using 3D Gaussian Splatting — reconstruct real-world environments and interactively delete, move, and modify objects in 3D space.</p>
         <div class="tags"><span>3D Gaussian Splatting</span><span>Python</span><span>Computer Vision</span></div>
-        <a href="https://github.com/devj10/SceneSculpt" target="_blank">GitHub →</a>
+        <div class="card-links">
+          <a href="https://github.com/devj10/SceneSculpt" target="_blank" class="card-icon-link" title="GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+        </div>
       </div>
 
       <div class="card">
         <h3>RL Fine-Tuning of Large Language Models for enhanced Mathematical Reasoning</h3>
         <p>Comparison of preference-based fine-tuning methods — DPO, ORPO, TOPR, KTO, and RLOO — on Qwen2.5-0.5B for mathematical reasoning tasks using the Countdown dataset. ORPO achieves the best performance with low cost, even from the base model.</p>
         <div class="tags"><span>PyTorch</span><span>vLLM</span><span>Qwen2.5</span><span>RL</span></div>
-        <a href="https://github.com/devj10/RL-Finetuning-of-Large-Language-Models" target="_blank">GitHub →</a>
+        <div class="card-links">
+          <a href="https://github.com/devj10/RL-Finetuning-of-Large-Language-Models" target="_blank" class="card-icon-link" title="GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+          <a href="papers/CS224R_Project_Final_Report.pdf" target="_blank" class="card-icon-link" title="Paper"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></a>
+        </div>
       </div>
 
       <div class="card">
         <h3>Multi-Agent Debate Framework</h3>
         <p>Simulation framework for multi-agent LLM debates with teacher-guided strategy prompting and judge-based evaluation. Adapted DeepMind's PromptBreeder to mutate and evaluate conflict prompts.</p>
         <div class="tags"><span>LangChain</span><span>GPT-4</span><span>LLaMA</span><span>Python</span></div>
-        <a href="https://github.com/devj10/Multi-agent-debate-framework" target="_blank">GitHub →</a>
+        <div class="card-links">
+          <a href="https://github.com/devj10/Multi-agent-debate-framework" target="_blank" class="card-icon-link" title="GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+        </div>
       </div>
 
       <div class="card">
         <h3>Predicting the NFL Draft</h3>
         <p>ML models to predict NFL Draft outcomes using 13k+ player combine metrics and college statistics. Compares XGBoost, Random Forests, and Neural Networks across draft position and round classification.</p>
         <div class="tags"><span>XGBoost</span><span>scikit-learn</span><span>Python</span><span>ML</span></div>
-        <a href="https://github.com/devj10/Predicting-the-NFL-Draft" target="_blank">GitHub →</a>
+        <div class="card-links">
+          <a href="https://github.com/devj10/Predicting-the-NFL-Draft" target="_blank" class="card-icon-link" title="GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+          <a href="papers/PredictingTheNFLDraft.pdf" target="_blank" class="card-icon-link" title="Paper"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></a>
+        </div>
       </div>
 
       <div class="card">
         <h3>Lip Reading Computer Vision Model</h3>
         <p>Speech recognition from silent video using 3D CNNs. Achieves 97.4% training and 99.2% test accuracy, with real-time inference on a set of pre-defined words.</p>
         <div class="tags"><span>PyTorch</span><span>3D CNN</span><span>OpenCV</span></div>
-        <a href="https://github.com/devj10/Lip-Reading-Computer-Vision-Model" target="_blank">GitHub →</a>
+        <div class="card-links">
+          <a href="https://github.com/devj10/Lip-Reading-Computer-Vision-Model" target="_blank" class="card-icon-link" title="GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+        </div>
       </div>
 
     </div>
@@ -255,6 +275,10 @@
             <span class="award-detail">1 of 16 admitted internationally</span>
           </div>
           <div class="award">
+            <span class="award-name">Euler Circle</span>
+            <span class="award-detail">Wrote paper in p-adic analysis</span>
+          </div>
+          <div class="award">
             <span class="award-name">American Invitational Mathematics Examination Qualifier</span>
             <span class="award-detail">3×</span>
           </div>
@@ -262,6 +286,7 @@
             <span class="award-name">Stanford Math Tournament</span>
             <span class="award-detail">Problem Writer</span>
           </div>
+          
         </div>
       </div>
 

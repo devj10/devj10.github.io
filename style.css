@@ -231,14 +231,22 @@ section p { color: var(--muted); max-width: 620px; }
   border: 1px solid rgba(108, 142, 255, 0.25);
 }
 
-.card a {
-  font-size: 0.85rem;
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: 600;
+.card-links {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: auto;
 }
 
-.card a:hover { text-decoration: underline; }
+.card-icon-link {
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.card-icon-link:hover { color: var(--accent); }
 
 /* COURSES */
 .course-list {
@@ -309,7 +317,17 @@ section p { color: var(--muted); max-width: 620px; }
   gap: 0.2rem;
 }
 
-.exp-company { font-weight: 700; font-size: 0.95rem; }
+.exp-company { font-weight: 700; font-size: 0.95rem; display: flex; align-items: center; gap: 0.4rem; }
+
+.paper-link {
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s;
+  flex-shrink: 0;
+}
+
+.paper-link:hover { color: var(--accent); }
 .exp-role { font-size: 0.8rem; color: var(--muted); }
 .exp-date { font-size: 0.8rem; color: var(--muted); white-space: nowrap; }
 
