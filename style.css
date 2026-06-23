@@ -361,6 +361,41 @@ section p { color: var(--muted); max-width: 620px; }
   line-height: 1.55;
 }
 
+/* COURSES TOGGLE */
+.courses-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.75rem;
+}
+
+.courses-header h2 { margin-bottom: 0; }
+
+.courses-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.courses-toggle:hover { color: var(--text); border-color: var(--accent); }
+
+.courses-chevron { transition: transform 0.25s; }
+.courses-chevron.open { transform: rotate(180deg); }
+
+.courses-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
 /* COURSES GRID */
 .courses-grid {
   display: grid;

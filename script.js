@@ -51,6 +51,24 @@ const observer = new IntersectionObserver((entries) => {
 
 sections.forEach(s => observer.observe(s));
 
+// Courses toggle
+const coursesToggle = document.getElementById('courses-toggle');
+const coursesBody = document.getElementById('courses-body');
+const coursesChevron = coursesToggle.querySelector('.courses-chevron');
+
+coursesToggle.addEventListener('click', () => {
+  const isOpen = coursesBody.style.maxHeight;
+  if (isOpen) {
+    coursesBody.style.maxHeight = null;
+    coursesToggle.querySelector('.toggle-label').textContent = 'Show';
+    coursesChevron.classList.remove('open');
+  } else {
+    coursesBody.style.maxHeight = coursesBody.scrollHeight + 'px';
+    coursesToggle.querySelector('.toggle-label').textContent = 'Hide';
+    coursesChevron.classList.add('open');
+  }
+});
+
 // Experience accordion
 document.querySelectorAll('.exp-header').forEach(btn => {
   btn.addEventListener('click', () => {
